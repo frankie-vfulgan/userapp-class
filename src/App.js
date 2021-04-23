@@ -1,11 +1,12 @@
+import React from 'react';
 import './App.css';
 import UserForm from './Components/UserForm';
-import { useState } from 'react';
+import {useState} from 'react';
 
 function App() {
   const [users, setUsers] = useState([]);
 
-  function addUser(user) {
+  function addUser(user){
     setUsers([...users, user]);
   }
 

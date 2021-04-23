@@ -24,42 +24,42 @@ function UserForm(props) {
             <form>
                 <div>
                     <label>Username</label>
-                    <input>
+                    <input
                         type="text"
                         name="username"
                         value={state.username}
                         onChange={handleOnChange}
-                    </input>
+                    />
                 </div>
 
                 <div>
                     <label>Email</label>
-                    <input>
+                    <input
                         type="text"
                         name="email"
                         value={state.email}
                         onChange={handleOnChange}
-                    </input>
+                    />
                 </div>
 
                 <div>
                     <label>Password</label>
-                    <input>
+                    <input
                         type="password"
                         name="password"
                         value={state.password}
                         onChange={handleOnChange}
-                    </input>
+                    />
                 </div>
 
                 <div>
                     <label>Country</label>
-                    <input>
+                    <input
                         type="text"
                         name="country"
                         value={state.country}
                         onChange={handleOnChange}
-                    </input>
+                    />
                 </div>
 
                 <div>
