@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function UserForm(props) {
-    const {state, setState} = useState({
+    const [state, setState] = useState({
         username: "",
         email: "",
         password: "",
@@ -22,45 +22,45 @@ function UserForm(props) {
     return(
         <div>
             <form>
-                <div>
-                    <label>Username</label>
+                <div><br/><br/>
+                    <label>Username</label><br/>
                     <input
                         type="text"
                         name="username"
                         value={state.username}
                         onChange={handleOnChange}
                     />
-                </div>
+                </div><br/>
 
                 <div>
-                    <label>Email</label>
+                    <label>Email</label><br/>
                     <input
                         type="text"
                         name="email"
                         value={state.email}
                         onChange={handleOnChange}
                     />
-                </div>
+                </div><br/>
 
                 <div>
-                    <label>Password</label>
+                    <label>Password</label><br/>
                     <input
                         type="password"
                         name="password"
                         value={state.password}
                         onChange={handleOnChange}
                     />
-                </div>
+                </div><br/>
 
                 <div>
-                    <label>Country</label>
+                    <label>Country</label><br/>
                     <input
                         type="text"
                         name="country"
                         value={state.country}
                         onChange={handleOnChange}
                     />
-                </div>
+                </div><br/>
 
                 <div>
                     <button type="button" onClick={handleSubmit}>
